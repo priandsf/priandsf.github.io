@@ -10890,7 +10890,6 @@
     class Embedded extends LightningElement {
       constructor(...args) {
         super(...args);
-        //static renderMode = 'light';
         this.webstoreId = webstoreId;
         this.checkoutEnabled = void 0;
       }
@@ -10903,6 +10902,8 @@
       }
       /*LWC compiler v5.1.0*/
     }
+    //static renderMode = 'light';
+    Embedded.shadowSupportMode = 'native';
     registerDecorators(Embedded, {
       publicProps: {
         webstoreId: {
